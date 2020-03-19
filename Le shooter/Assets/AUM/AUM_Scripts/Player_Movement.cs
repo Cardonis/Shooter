@@ -8,6 +8,8 @@ public class Player_Movement : MonoBehaviour
     Rigidbody2D rB2D;
     public float speed;
 
+    public int life;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +37,15 @@ public class Player_Movement : MonoBehaviour
             rB2D.velocity = new Vector2(0, 0);
         }
 
+    }
+
+    public void TakeDamage(int damage)
+    {
+        life -= damage;
+
+        if (life <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

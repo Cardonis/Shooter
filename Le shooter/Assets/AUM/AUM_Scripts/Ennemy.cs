@@ -8,11 +8,7 @@ public class Ennemy : MonoBehaviour
 
     public bool isActive = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Score score;
 
     private void FixedUpdate()
     {
@@ -26,6 +22,8 @@ public class Ennemy : MonoBehaviour
         if(life <= 0)
         {
             Destroy(gameObject);
+            score = GameObject.FindWithTag("scoremanager").GetComponent<Score>();
+            score.score += 50;
         }
     }
 }

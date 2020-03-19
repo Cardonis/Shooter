@@ -30,9 +30,9 @@ public class BulletFollow_Controller : MonoBehaviour
 
         float rotateAmount = Vector3.Cross(direction, -transform.up).z;
 
-        rb2D.angularVelocity = rotateAmount * rotateSpeed;
+        rb2D.angularVelocity = -rotateAmount * rotateSpeed;
 
-        rb2D.velocity = transform.up * speed;
+        rb2D.velocity = -transform.up * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -100,8 +100,9 @@ MonoBehaviour:
   currentProjectile: {fileID: 8893819098232086542, guid: 5cf35a995476b5e4bb00474080a52a08,
     type: 3}
   bulletSpeed: 1
-  shootCD: 0
+  shootCD: 2
   shootCDTimer: 0
+  baseControl: {fileID: 0}
 --- !u!61 &5062565439358329585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 4
+  isActive: 0
   speed: 0
   projectile: {fileID: 0}
   layerMask:

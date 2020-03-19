@@ -8,7 +8,7 @@ public class FondsController : MonoBehaviour
 
     public GameObject player;
 
-    public GameObject fondPrefab;
+    public GameObject[] fondPrefab;
 
     public GameObject firstFond;
     public GameObject secondFond;
@@ -17,9 +17,9 @@ public class FondsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firstFond = Instantiate(fondPrefab, fonds);
-        secondFond = Instantiate(fondPrefab, fonds);
-        thirdFond = Instantiate(fondPrefab, fonds);
+        firstFond = Instantiate(fondPrefab[Random.Range(0, fondPrefab.Length)], fonds);
+        secondFond = Instantiate(fondPrefab[Random.Range(0, fondPrefab.Length)], fonds);
+        thirdFond = Instantiate(fondPrefab[Random.Range(0, fondPrefab.Length)], fonds);
 
         firstFond.transform.position = new Vector2(secondFond.transform.position.x, transform.position.y);
 
@@ -45,7 +45,7 @@ public class FondsController : MonoBehaviour
         firstFond = secondFond;
         secondFond = thirdFond;
 
-        thirdFond = Instantiate(fondPrefab, fonds);
+        thirdFond = Instantiate(fondPrefab[Random.Range(0, fondPrefab.Length)], fonds);
 
         thirdFond.transform.position = new Vector2(secondFond.transform.position.x, secondFond.transform.position.y + 9.95f);
 

@@ -17,7 +17,7 @@ public class Titltescreen : MonoBehaviour
 
        if (Input.anyKey == true)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
     IEnumerator Clignotement()

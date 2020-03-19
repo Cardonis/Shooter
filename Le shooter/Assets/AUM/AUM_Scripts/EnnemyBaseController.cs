@@ -26,14 +26,12 @@ public class EnnemyBaseController : Ennemy
         rB2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    public override void Update()
-    {
-        base.Update();
-    }
+   
 
     private void FixedUpdate()
     {
+        if (isActive == false)
+            return;
         RaycastHit2D hitRight = Physics2D.Raycast(transform.position, Vector2.right, Mathf.Infinity, layerMask);
         RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, -Vector2.right, Mathf.Infinity, layerMask);
 

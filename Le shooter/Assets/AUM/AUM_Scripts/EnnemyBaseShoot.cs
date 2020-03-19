@@ -10,17 +10,21 @@ public class EnnemyBaseShoot : MonoBehaviour
     public float bulletSpeed;
     public float shootCD;
     [HideInInspector] public float shootCDTimer;
+    public Ennemy baseControl;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        baseControl = GetComponent<Ennemy>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (baseControl.isActive == false)
+            return;
         if (shootCDTimer < 0)
         {
             Shoot();

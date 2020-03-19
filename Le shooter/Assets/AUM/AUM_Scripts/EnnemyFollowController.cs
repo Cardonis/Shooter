@@ -20,14 +20,10 @@ public class EnnemyFollowController : Ennemy
     }
 
     // Update is called once per frame
-    public override void Update()
-    {
-        base.Update();
-    }
+  
 
     private void FixedUpdate()
     {
-
         rB2D.velocity = Vector2.down.normalized * speed;
 
     }

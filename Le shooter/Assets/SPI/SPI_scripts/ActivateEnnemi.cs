@@ -8,7 +8,11 @@ public class ActivateEnnemi : MonoBehaviour
     {
         if (collision.CompareTag("Ennemy"))
         {
-            //collision.GetComponent<Ennemy>().;
+            if(collision.GetComponent<Ennemy>().isActive == false)
+            {
+
+                collision.GetComponent<Ennemy>().isActive = true;
+            }
         }
     }
 }

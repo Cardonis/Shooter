@@ -8,15 +8,14 @@ public class EnnemyBaseShoot : MonoBehaviour
     Bullet_Controller bController;
 
     public float bulletSpeed;
-    [HideInInspector] public float shootCD;
+    public float shootCD;
     [HideInInspector] public float shootCDTimer;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        bController = currentProjectile.GetComponent<Bullet_Controller>();
-        shootCD = bController.launchCD;
+
     }
 
     // Update is called once per frame

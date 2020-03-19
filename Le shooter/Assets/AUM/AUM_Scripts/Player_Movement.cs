@@ -10,6 +10,8 @@ public class Player_Movement : MonoBehaviour
 
     public int life;
 
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +47,8 @@ public class Player_Movement : MonoBehaviour
 
         if (life <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            Instantiate(gameOver, GameObject.Find("Follow").transform) ;
         }
     }
 }

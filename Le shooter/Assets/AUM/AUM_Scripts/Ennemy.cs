@@ -21,9 +21,9 @@ public class Ennemy : MonoBehaviour
 
         if(life <= 0)
         {
-            Destroy(gameObject);
             score = GameObject.FindWithTag("scoremanager").GetComponent<Score>();
             score.score += 50;
+            Destroy(gameObject);
         }
     }
 }

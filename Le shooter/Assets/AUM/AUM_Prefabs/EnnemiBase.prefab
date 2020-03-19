@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 3671900236617185973}
   - component: {fileID: 3481889289382064466}
   - component: {fileID: 3481889289382064467}
+  - component: {fileID: 2094410202}
   m_Layer: 11
   m_Name: EnnemiBase
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,12 +75,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb83c30f611a0ef4fa3176046dbb4966, type: 3}
-  m_Color: {r: 1, g: 0.2216981, b: 0.2216981, a: 1}
+  m_Sprite: {fileID: 3105253809133796538, guid: aed95570e3a0dc34690f036bac30a172,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.33333334, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -97,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57333414b98987744baafc7964584ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 0
+  life: 2
   speed: 2
   projectile: {fileID: 8893819098232086542, guid: 5cf35a995476b5e4bb00474080a52a08,
     type: 3}
@@ -105,8 +107,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   rB2D: {fileID: 3481889289382064467}
-  distanceLeft: 0
-  distanceRight: 0
+  distanceLeft: 0.5
+  distanceRight: 3
   currentDirection: 0
 --- !u!114 &3671900236617185973
 MonoBehaviour:
@@ -120,7 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0f39b31450e6145bc3b0b5eae1b2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentProjectile: {fileID: 0}
+  currentProjectile: {fileID: 8893819098232086542, guid: 5cf35a995476b5e4bb00474080a52a08,
+    type: 3}
   bulletSpeed: 1
   shootCD: 0
   shootCDTimer: 0
@@ -141,8 +144,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.6}
-    newSize: {x: 0.15, y: 0.15}
+    oldSize: {x: 0.33333334, y: 0.5}
+    newSize: {x: 0.33333334, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -171,3 +174,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &2094410202
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481889289382064468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3cadfb44379eaba498d141b18d781a6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

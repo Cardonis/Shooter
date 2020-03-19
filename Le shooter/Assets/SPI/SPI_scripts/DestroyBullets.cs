@@ -8,7 +8,7 @@ public class DestroyBullets : MonoBehaviour
     {
         if (collision.CompareTag("EnnemiBullet") || collision.CompareTag("PlayerBullet"))
         {
-            Destroy(collision);
+            Destroy(collision.gameObject);
         }
     }
 }

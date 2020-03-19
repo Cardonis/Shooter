@@ -36,7 +36,7 @@ public class EnnemyFollowShoot : MonoBehaviour
         }
     }
 
-    IEnumerator SeveralShoots(int numberOfShoots)
+    /*IEnumerator SeveralShoots(int numberOfShoots)
     {
         
         for (int i = 0; i < numberOfShoots; i++)

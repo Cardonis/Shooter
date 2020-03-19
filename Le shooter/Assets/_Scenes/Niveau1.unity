@@ -215,7 +215,7 @@ PrefabInstance:
     - target: {fileID: 3481889289382064463, guid: f54ef479a7f83ca4fa608e97e9309583,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.175864
+      value: 10.49
       objectReference: {fileID: 0}
     - target: {fileID: 3481889289382064463, guid: f54ef479a7f83ca4fa608e97e9309583,
         type: 3}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 678339530}
   - component: {fileID: 678339532}
   - component: {fileID: 678339531}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BulletDestroyLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 714005273}
   - component: {fileID: 714005275}
   - component: {fileID: 714005274}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BulletDestroyRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ PrefabInstance:
     - target: {fileID: 3481889289382064463, guid: f54ef479a7f83ca4fa608e97e9309583,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.172
+      value: 10.4861355
       objectReference: {fileID: 0}
     - target: {fileID: 3481889289382064463, guid: f54ef479a7f83ca4fa608e97e9309583,
         type: 3}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 1752149275}
   - component: {fileID: 1752149277}
   - component: {fileID: 1752149276}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BulletDestroyDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 1834821205}
   - component: {fileID: 1834821207}
   - component: {fileID: 1834821206}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: ennemiActivator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

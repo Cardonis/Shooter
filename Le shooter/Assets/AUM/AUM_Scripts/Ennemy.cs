@@ -14,13 +14,9 @@ public class Ennemy : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    public virtual void Update()
+    private void FixedUpdate()
     {
-        if (isActive == false)
-            return;
-
-
+        
     }
 
     public void TakeDamage(int damage)

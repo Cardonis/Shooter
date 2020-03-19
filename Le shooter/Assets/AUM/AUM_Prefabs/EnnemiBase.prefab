@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2
+  isActive: 0
   speed: 2
   projectile: {fileID: 8893819098232086542, guid: 5cf35a995476b5e4bb00474080a52a08,
     type: 3}
@@ -125,7 +126,7 @@ MonoBehaviour:
   currentProjectile: {fileID: 8893819098232086542, guid: 5cf35a995476b5e4bb00474080a52a08,
     type: 3}
   bulletSpeed: 1
-  shootCD: 0
+  shootCD: 1.5
   shootCDTimer: 0
 --- !u!61 &3481889289382064466
 BoxCollider2D:
@@ -144,7 +145,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33333334, y: 0.5}
+    oldSize: {x: 0.5, y: 0.75}
     newSize: {x: 0.33333334, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

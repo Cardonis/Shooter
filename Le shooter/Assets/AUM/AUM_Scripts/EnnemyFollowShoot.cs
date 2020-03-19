@@ -26,7 +26,7 @@ public class EnnemyFollowShoot : MonoBehaviour
     {
         if (shootCDTimer < 0)
         {
-            StartCoroutine(SeveralShoots(3));
+            //StartCoroutine(SeveralShoots(3));
             shootCDTimer = shootCD;
         }
         else
@@ -35,7 +35,7 @@ public class EnnemyFollowShoot : MonoBehaviour
         }
     }
 
-    IEnumerator SeveralShoots(int numberOfShoots)
+    /*IEnumerator SeveralShoots(int numberOfShoots)
     {
 
         for(int i = 0; i < numberOfShoots; i++)
@@ -46,7 +46,7 @@ public class EnnemyFollowShoot : MonoBehaviour
         }
 
 
-    }
+    }*/
 
     void Shoot()
     {

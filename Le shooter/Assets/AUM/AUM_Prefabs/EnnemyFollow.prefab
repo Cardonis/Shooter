@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2614157141207403188}
   - component: {fileID: 2614157141207403179}
-  - component: {fileID: 2801318142361485646}
   - component: {fileID: 2614157141207403177}
   - component: {fileID: 2614157141207403176}
   - component: {fileID: 2291277642544373459}
   - component: {fileID: 4545815841902068349}
+  - component: {fileID: -4877869626342546682}
   m_Layer: 11
   m_Name: EnnemyFollow
   m_TagString: Ennemy
@@ -87,24 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2801318142361485646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2614157141207403183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0f39b31450e6145bc3b0b5eae1b2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentProjectile: {fileID: 8909733570509333021, guid: 3437961ca1ea01f408ae3e468566c6de,
-    type: 3}
-  bulletSpeed: 1
-  shootCD: 1.5
-  shootCDTimer: 0
-  baseControl: {fileID: 0}
 --- !u!61 &2614157141207403177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,3 +173,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4877869626342546682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614157141207403183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a8e696299fb0a4b8e2bff52b3534c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentProjectile: {fileID: 8909733570509333021, guid: 3437961ca1ea01f408ae3e468566c6de,
+    type: 3}
+  bulletSpeed: 1
+  shootCD: 2
+  shootCDTimer: 0
+  shootCDBetweenShots: 0.2
+  numberOfShoot: 3

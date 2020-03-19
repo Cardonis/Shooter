@@ -24,6 +24,8 @@ public class EnnemyFollowController : Ennemy
 
     private void FixedUpdate()
     {
+        if (isActive == false)
+            return;
         rB2D.velocity = Vector2.down.normalized * speed;
 
     }

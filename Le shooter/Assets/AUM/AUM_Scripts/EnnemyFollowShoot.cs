@@ -14,17 +14,20 @@ public class EnnemyFollowShoot : MonoBehaviour
     public float shootCDBetweenShots;
 
     public int numberOfShoot;
+    public Ennemy followControl;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        followControl = GetComponent<Ennemy>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (followControl.isActive == false)
+            return;
         if (shootCDTimer < 0)
         {
             StartCoroutine(SeveralShoots(numberOfShoot));

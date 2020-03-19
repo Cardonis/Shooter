@@ -11,6 +11,8 @@ public class EnnemyFollowShoot : MonoBehaviour
     [HideInInspector] public float shootCD;
     [HideInInspector] public float shootCDTimer;
 
+    public int numberOfShoot;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +42,7 @@ public class EnnemyFollowShoot : MonoBehaviour
         {
             Shoot();
 
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds();
         }
 
 

@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   launchSpeed: 0
-  bulletTypeSpeed: 12
+  bulletTypeSpeed: 8
   launchCD: 0.4
   rB2D: {fileID: 4225921738948299864}
   bulletDamage: 1
